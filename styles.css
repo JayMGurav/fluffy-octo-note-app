@@ -1,0 +1,84 @@
+*+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;   
+}
+body{
+  max-width: 100%;
+  max-height: 100vh;
+  overflow-y: auto;
+  background:#fff;
+}
+
+.form{
+  background-color: antiquewhite;
+  padding: 1rem;
+  margin:0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3ch;
+  border-radius: 8px;
+}
+
+.form > .form_input{
+  border:none;
+  padding:0.25rem;
+  background:#fcfcfc;
+  border-radius: 4px;
+  font-size: 1rem;
+  max-width: 100%;
+}
+
+.btn{
+  border:none;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+.btn_primary{
+  background:#40f;
+  color:#fff;
+}
+.btn_danger{
+  background: rgb(247, 77, 77);
+  color:#fff;
+}
+
+#new_note_title{
+  flex:2 2 0;
+}
+#new_note_content{
+  flex: 4 1 0;
+}
+#new_note_submit{
+  flex:1 0 0;
+}
+
+#notes{
+  width:100%;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap:2ch;
+}
+
+.note{
+  max-width: 300px;
+  border-radius: 8px;
+  background-color: antiquewhite;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap:1ch;
+  height: fit-content;
+}
+.note > strong{
+  color: #40f;
+  margin-bottom: 1.2ch;
+}
+
+.note > button{
+  margin-top: .2ch;
+}
